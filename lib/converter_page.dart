@@ -68,6 +68,8 @@ class _ConverterPageState extends State<ConverterPage> {
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
+                  const SizedBox(height: 20),
+                  Image.asset('assets/currency.png', height: 200, width: 200),
                   const Text(
                     'Convert USD to BDT',
                     style: TextStyle(
@@ -76,7 +78,6 @@ class _ConverterPageState extends State<ConverterPage> {
                       color: Colors.teal,
                     ),
                   ),
-                  const SizedBox(height: 20),
                   TextField(
                     controller: textEditingController,
                     keyboardType: const TextInputType.numberWithOptions(
